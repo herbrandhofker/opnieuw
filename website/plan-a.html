@@ -13,143 +13,685 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <header>
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="logo">
-          <h1>Sidhadorp Wooncoöperatie</h1>
+  <body class="bg-gray-50">
+    <header class="bg-white shadow-sm">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between"
+        >
+          <div class="logo mb-4 md:mb-0">
+            <h1 class="text-2xl font-bold text-blue-800">
+              Sidhadorp Wooncoöperatie
+            </h1>
+          </div>
+          <nav>
+            <ul class="flex flex-wrap gap-2 justify-center md:justify-start">
+              <li>
+                <a
+                  href="index.html"
+                  class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="plan-a.html"
+                  class="px-3 py-2 rounded bg-blue-100 text-blue-800 font-medium transition-colors duration-200"
+                  >Plan A</a
+                >
+              </li>
+              <li>
+                <a
+                  href="plan-b.html"
+                  class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                  >Plan B</a
+                >
+              </li>
+              <li>
+                <a
+                  href="plan-a-financieel.html"
+                  class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                  >Financiële Analyse</a
+                >
+              </li>
+              <li>
+                <a
+                  href="woningen.html"
+                  class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                  >Woningen</a
+                >
+              </li>
+              <li>
+                <a
+                  href="faq.html"
+                  class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul class="flex flex-wrap gap-2 justify-center md:justify-start">
-            <li>
-              <a
-                href="index.html"
-                class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="plan-a.html"
-                class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
-                >Plan A</a
-              >
-            </li>
-            <li>
-              <a
-                href="plan-b.html"
-                class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
-                >Plan B</a
-              >
-            </li>
-            <li>
-              <a
-                href="plan-a-financieel.html"
-                class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
-                >Financiële Analyse</a
-              >
-            </li>
-            <li>
-              <a
-                href="haalbaarheidsonderzoek.html"
-                class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
-                >Haalbaarheidsonderzoek</a
-              >
-            </li>
-            <li>
-              <a
-                href="woningen.html"
-                class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
-                >Woningen</a
-              >
-            </li>
-            <li>
-              <a
-                href="faq.html"
-                class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
-                >FAQ</a
-              >
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
 
-    <section class="page-header">
+    <section class="bg-blue-800 text-white py-16">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2>Plan A: Gemeenschappelijke Wooncoöperatie</h2>
+        <h2 class="text-4xl font-bold mb-4">
+          Plan A: Gemeenschappelijke Wooncoöperatie
+        </h2>
+        <p class="text-xl text-blue-100 max-w-3xl">
+          Samen bouwen aan een duurzame toekomst voor Sidhadorp met behoud van
+          het unieke TM-karakter als centrale waarde
+        </p>
       </div>
     </section>
 
-    <section class="content">
+    <section class="py-16">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="plan-info">
-          <h3>Overzicht Plan A</h3>
-          <p>
-            Plan A betreft de ontwikkeling van een volledig gemeenschappelijke
-            wooncoöperatie binnen Sidhadorp, waarbij bewoners gezamenlijk
-            eigenaar worden van het gehele complex. Dit model is gebaseerd op
-            solidariteit en gemeenschappelijk bezit.
-          </p>
+        <!-- Introductie met mooie quote/callout -->
+        <div class="max-w-4xl mx-auto mb-16">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-blue-800 mb-4">
+                Overzicht Plan A: Een Zelfstandige Wooncoöperatie
+              </h3>
+              <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                Plan A voorziet in de oprichting van een zelfstandige
+                wooncoöperatie voor Sidhadorp. De belangrijkste doelstelling is
+                het waarborgen van het unieke TM-karakter van onze gemeenschap,
+                met volledige zeggenschap over woningtoewijzing en
+                gemeenschapsactiviteiten.
+              </p>
+              <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                <p class="italic text-blue-800">
+                  "Met sociale huur in eigen beheer blijven we trouw aan de
+                  oorspronkelijke visie van Sidhadorp: een harmonieuze
+                  leefgemeenschap waar het TM-programma centraal staat en
+                  woonruimte beschikbaar is voor alle beoefenaars, ongeacht hun
+                  financiële situatie."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <div class="plan-features">
-            <h3>Kenmerken van Plan A</h3>
-            <ul>
-              <li>
-                Collectief eigendom van alle woningen en gemeenschappelijke
-                ruimtes
-              </li>
-              <li>Gelijke stemrechten voor alle leden van de coöperatie</li>
-              <li>Gezamenlijk onderhoud en beheer</li>
-              <li>Gedeelde verantwoordelijkheid voor financiering</li>
-              <li>Nadruk op duurzaamheid en gemeenschapszin</li>
-            </ul>
+        <!-- Grid met kenmerken, voordelen en uitdagingen -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <!-- Kenmerken -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
+          >
+            <div class="bg-blue-800 py-4">
+              <h3 class="text-xl font-bold text-white text-center">
+                Kenmerken van Plan A
+              </h3>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-blue-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  <span
+                    >Collectief eigendom van alle woningen en gemeenschappelijke
+                    ruimtes</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-blue-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  <span
+                    >Gelijke stemrechten voor alle leden van de coöperatie</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-blue-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  <span
+                    >Plannen voor een energie gemeenschap om energiekosten te
+                    verlagen en om van de dure stadsverwarming (>€70/maand
+                    aansluitkosten) af te komen</span
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="plan-benefits">
-            <h3>Voordelen</h3>
-            <ul>
-              <li>Lagere individuele financiële drempel</li>
-              <li>Sterkere gemeenschapsbanden</li>
-              <li>Efficiënter gebruik van ruimte en middelen</li>
-              <li>Betere onderhandelingspositie als collectief</li>
-              <li>Gedeelde kosten voor onderhoud en verduurzaming</li>
-            </ul>
+          <!-- Voordelen -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
+          >
+            <div class="bg-green-600 py-4">
+              <h3 class="text-xl font-bold text-white text-center">
+                Voordelen
+              </h3>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  <span
+                    ><strong>Behoud TM-karakter:</strong> Zeggenschap over
+                    toewijzing van woningen aan TM-beoefenaars</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  <span
+                    ><strong>Lokaal beheer:</strong> Efficiënter onderhoud door
+                    samenwerking met naburige bedrijven</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  <span
+                    ><strong>Kostenvoordeel:</strong> 15-20% lagere
+                    onderhoudskosten door lokale aanbesteding</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  <span
+                    ><strong>Eenvoudige organisatie:</strong> administratief
+                    beheer wordt ingericht met de nieuwste, door AI op maat
+                    gemaakte ICT</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  <span
+                    ><strong>Energiegemeenschap:</strong> Verlaging van
+                    maandelijkse woonlasten door gezamenlijke energievoorziening
+                    en afkoppeling van de dure stadsverwarming</span
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="plan-challenges">
-            <h3>Uitdagingen</h3>
-            <ul>
-              <li>Complexere besluitvormingsprocessen</li>
-              <li>Juridische uitdagingen rond collectief eigendom</li>
-              <li>Afhankelijkheid van actieve participatie van alle leden</li>
-              <li>
-                Behoefte aan duidelijke afspraken over rechten en plichten
-              </li>
-            </ul>
+          <!-- Verbeterde uitdagingen sectie -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
+          >
+            <div class="bg-amber-500 py-4">
+              <h3 class="text-xl font-bold text-white text-center">
+                Aandachtspunten
+              </h3>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-amber-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                    ></path>
+                  </svg>
+                  <span
+                    >Transitieperiode van huidige naar nieuwe structuur</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-amber-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                    ></path>
+                  </svg>
+                  <span>Afstemming met gemeente over toewijzingsbeleid</span>
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-amber-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                    ></path>
+                  </svg>
+                  <span>Groot onderhoud van de woningen op termijn</span>
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-amber-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                    ></path>
+                  </svg>
+                  <span
+                    >Praktische implementatie van de energiegemeenschap</span
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
+        </div>
 
-          <div class="cta-section">
-            <h3>Meer informatie</h3>
-            <p>
-              Voor meer details over de financiële aspecten van Plan A, bekijk
-              de
-              <a href="plan-a-financieel.html">financiële uitwerking</a>.
+        <!-- Tijdlijn & Deadlines -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden my-8">
+          <div class="bg-red-600 py-4">
+            <h3 class="text-xl font-bold text-white text-center">
+              Tijdlijn &amp; Deadlines
+            </h3>
+          </div>
+          <div class="p-6">
+            <p class="mb-4 text-gray-700">
+              Vanwege wettelijke regelingen is er een beperkt tijdsvenster om de
+              vastgoed-wooncoöperatie te realiseren. Het volgen van deze
+              tijdlijn is cruciaal voor het succes van Plan A:
             </p>
-            <a href="haalbaarheidsonderzoek.html" class="btn"
-              >Bekijk het haalbaarheidsonderzoek</a
-            >
+            <ul class="space-y-4">
+              <li class="border-b border-gray-200 pb-3">
+                <div class="flex">
+                  <div class="flex-shrink-0 w-24 font-bold text-red-600">
+                    1 juli 2025
+                  </div>
+                  <div>
+                    <span class="font-semibold">Absolute deadline</span> - Na
+                    deze datum vervalt de experimentregeling die aankoop tegen
+                    50% van de WOZ-waarde mogelijk maakt. Deze unieke
+                    mogelijkheid komt niet meer terug.
+                  </div>
+                </div>
+              </li>
+              <li class="border-b border-gray-200 pb-3">
+                <div class="flex">
+                  <div class="flex-shrink-0 w-24 font-bold text-red-600">
+                    Mei 2025
+                  </div>
+                  <div>
+                    <span class="font-semibold">Oprichting coöperatie</span> -
+                    De wooncoöperatie moet officieel zijn opgericht met
+                    voldoende leden om aan de wettelijke vereisten te voldoen.
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="mt-4 bg-blue-50 p-4 rounded-lg">
+              <p class="text-blue-800">
+                <strong>Waarom deze tijdsdruk?</strong> De speciale regeling die
+                ons in staat stelt om de woningen voor 50% van de WOZ-waarde te
+                kopen, verloopt definitief op 1 juli 2025. Deze unieke kans om
+                het Sidhadorp in eigen beheer te nemen komt niet meer terug.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hoe werkt het - aangepast naar sociale huur model -->
+        <div class="max-w-4xl mx-auto mb-16">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-blue-800 mb-6">
+                Hoe werkt Plan A in de praktijk?
+              </h3>
+
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 bg-blue-100 rounded-full p-3 mr-4">
+                    <span class="text-blue-800 font-bold text-lg">1</span>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold mb-1">
+                      Oprichting zelfstandige wooncoöperatie
+                    </h4>
+                    <p class="text-gray-700">
+                      De initiatiefnemers richten een zelfstandige
+                      wooncoöperatie op die volledig gericht is op het behoud en
+                      de versterking van het TM-karakter van Sidhadorp.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 bg-blue-100 rounded-full p-3 mr-4">
+                    <span class="text-blue-800 font-bold text-lg">2</span>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold mb-1">
+                      Beschikbare financiering
+                    </h4>
+                    <p class="text-gray-700">
+                      De financiering van €24 miljoen is reeds verzekerd via een
+                      sociale hypotheekverstrekker. Er is geen eigen inleg van
+                      bewoners nodig voor de aankoop.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 bg-blue-100 rounded-full p-3 mr-4">
+                    <span class="text-blue-800 font-bold text-lg">3</span>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold mb-1">
+                      Woningtoewijzing en behoud karakter
+                    </h4>
+                    <p class="text-gray-700">
+                      De coöperatie krijgt volledige controle over
+                      woningtoewijzing, waardoor het TM-karakter van Sidhadorp
+                      behouden blijft. Toewijzing gebeurt op basis van
+                      betrokkenheid bij de TM-gemeenschap en sociale criteria.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 bg-blue-100 rounded-full p-3 mr-4">
+                    <span class="text-blue-800 font-bold text-lg">4</span>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold mb-1">
+                      Lokaal beheer & onderhoud
+                    </h4>
+                    <p class="text-gray-700">
+                      Groot onderhoud wordt uitgevoerd door een naburig bedrijf
+                      tegen gunstige tarieven. Door schaalvoordelen en lokale
+                      uitvoering liggen de onderhoudskosten 15-20% lager dan bij
+                      commercieel beheer.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 bg-blue-100 rounded-full p-3 mr-4">
+                    <span class="text-blue-800 font-bold text-lg">5</span>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold mb-1">
+                      Toekomstzekerheid
+                    </h4>
+                    <p class="text-gray-700">
+                      Betaalbare sociale huren blijven gegarandeerd, ook voor
+                      nieuwe generaties TM-beoefenaars. Na aflossing komen de
+                      middelen beschikbaar voor verduurzaming en vernieuwing
+                      binnen de gemeenschap.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Vervang de huidige beschrijving van ouderenwoningen -->
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 bg-blue-100 rounded-full p-3 mr-4">
+                    <span class="text-blue-800 font-bold text-lg">6</span>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold mb-1">
+                      Sociale ouderenwoningen voor betere doorstroming
+                    </h4>
+                    <p class="text-gray-700">
+                      De 25 miljoen euro die bij uitkoop naar de bestaande
+                      organisatie gaat, kan worden aangewend voor de bouw van
+                      sociale ouderenwoningen in de directe nabijheid van
+                      Sidhadorp. Deze woningen blijven in de sociale huursector,
+                      waardoor ze betaalbaar zijn voor alle oudere
+                      TM-beoefenaars. Dit bevordert bovendien de doorstroming
+                      binnen Sidhadorp zelf: ouderen kunnen verhuizen naar
+                      geschikte, kleinere woningen, waardoor grotere
+                      gezinswoningen vrijkomen voor jonge gezinnen uit de
+                      TM-gemeenschap.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Voorbeelden van andere wooncoöperaties sectie - toevoegen vóór de CTA -->
+        <div class="max-w-4xl mx-auto mb-16">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-blue-800 mb-6">
+                Succesvolle voorbeelden van wooncoöperaties buiten het reguliere
+                bestel
+              </h3>
+
+              <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                Het model dat we in Plan A voorstellen is niet nieuw. Er zijn in
+                Nederland al verschillende succesvolle voorbeelden van
+                wooncoöperaties die uit het reguliere corporatiebestel zijn
+                getreden en hun eigen identiteit bewaren:
+              </p>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                  <h4 class="text-lg font-semibold text-blue-800 mb-2">
+                    De Nieuwe Meent (Amsterdam)
+                  </h4>
+                  <p class="text-gray-700">
+                    Een wooncoöperatie waar bewoners gezamenlijk eigenaar zijn
+                    en het beheer volledig in eigen handen hebben genomen, met
+                    behoud van hun unieke gemeenschapskarakter.
+                  </p>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                  <h4 class="text-lg font-semibold text-blue-800 mb-2">
+                    Soweto (Amsterdam)
+                  </h4>
+                  <p class="text-gray-700">
+                    Ontstaan uit de kraakbeweging en nu een zelfstandige
+                    wooncoöperatie met eigen beheer en toewijzingsbeleid,
+                    waarbij de gemeenschap centraal staat.
+                  </p>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                  <h4 class="text-lg font-semibold text-blue-800 mb-2">
+                    De Warren (Amsterdam)
+                  </h4>
+                  <p class="text-gray-700">
+                    Een recent project (2021) waar bewoners samen eigenaar zijn
+                    en beslissen over toewijzing en beheer, met sterke nadruk op
+                    duurzaamheid.
+                  </p>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                  <h4 class="text-lg font-semibold text-blue-800 mb-2">
+                    VrijCoop
+                  </h4>
+                  <p class="text-gray-700">
+                    Een landelijke koepelorganisatie die verschillende
+                    woonprojecten ondersteunt om uit het reguliere bestel te
+                    stappen en woningen in collectief eigendom te brengen.
+                  </p>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                  <h4 class="text-lg font-semibold text-blue-800 mb-2">
+                    IEWAN Woongemeenschap (Nijmegen)
+                  </h4>
+                  <p class="text-gray-700">
+                    Een ecologisch woonproject met collectief eigendom en sterke
+                    gemeenschapswaarden, vergelijkbaar met hoe wij het
+                    TM-karakter van Sidhadorp willen bewaren.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="bg-blue-100 border-l-4 border-blue-500 p-4 rounded mb-4"
+              >
+                <p class="text-blue-800">
+                  <strong>Wat we hiervan kunnen leren:</strong> Deze voorbeelden
+                  tonen aan dat het model van Plan A haalbaar is en al op
+                  verschillende plekken wordt toegepast. De juridische
+                  constructies en het behoud van het eigen karakter van de
+                  gemeenschap zijn succesvol gebleken.
+                </p>
+              </div>
+
+              <p class="text-gray-700">
+                We staan in contact met meerdere van deze initiatieven om van
+                hun ervaringen te leren en de best practices toe te passen op
+                onze situatie in Sidhadorp.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="max-w-4xl mx-auto">
+          <div
+            class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl shadow-lg overflow-hidden"
+          >
+            <div class="p-8 text-center">
+              <h3 class="text-2xl font-bold text-white mb-4">
+                Meer informatie
+              </h3>
+              <p class="text-blue-100 mb-6">
+                Voor meer details over de financiële aspecten van Plan A, bekijk
+                de uitgebreide financiële analyse die we hebben opgesteld.
+              </p>
+              <a
+                href="plan-a-financieel.html"
+                class="inline-block bg-white text-blue-800 font-bold py-3 px-8 rounded-lg shadow-md hover:bg-blue-50 transition duration-300 transform hover:scale-105"
+              >
+                Bekijk de Financiële Analyse
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer>
+    <footer class="bg-gray-800 text-white py-8">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <p>&copy; 2025 Sidhadorp Wooncoöperatie</p>
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <h2 class="text-xl font-bold">Sidhadorp Wooncoöperatie</h2>
+            <p class="mt-2 text-gray-400">Samen bouwen aan onze toekomst</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-2">Contact</h3>
+            <p class="text-gray-400">info@sidhadorp-wooncoop.nl</p>
+            <p class="text-gray-400">06-12345678</p>
+          </div>
+        </div>
+        <div class="mt-8 border-t border-gray-700 pt-6 text-sm text-gray-400">
+          <p>&copy; 2025 Sidhadorp Wooncoöperatie</p>
+        </div>
       </div>
     </footer>
-
-    <script src="assets/js/main.js"></script>
   </body>
 </html>
