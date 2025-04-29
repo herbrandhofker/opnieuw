@@ -11,35 +11,78 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="logo">
           <h1>Sidhadorp Wooncoöperatie</h1>
         </div>
         <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="plan-a.html">Plan A</a></li>
-            <li><a href="plan-b.html">Plan B</a></li>
-            <li><a href="plan-a-financieel.html">Financiële Analyse</a></li>
-            
-            <li><a href="woningen.html" class="active">Woningen</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+          <ul class="flex flex-wrap gap-2 justify-center md:justify-start">
+            <li>
+              <a
+                href="index.html"
+                class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="plan-a.html"
+                class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                >Plan A</a
+              >
+            </li>
+            <li>
+              <a
+                href="plan-b.html"
+                class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                >Plan B</a
+              >
+            </li>
+            <li>
+              <a
+                href="plan-a-financieel.html"
+                class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                >Financiële Analyse</a
+              >
+            </li>
+            <li>
+              <a
+                href="haalbaarheidsonderzoek.html"
+                class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                >Haalbaarheidsonderzoek</a
+              >
+            </li>
+            <li>
+              <a
+                href="woningen.html"
+                class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                >Woningen</a
+              >
+            </li>
+            <li>
+              <a
+                href="faq.html"
+                class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                >FAQ</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
     <section class="page-header">
-      <div class="container">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2>Woningen in Sidhadorp</h2>
       </div>
     </section>
 
     <section class="content">
-      <div class="container">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="woningen-container">
           <div class="kaart-link">
             <a href="sidhadorp_kaart.html" class="btn btn-large">
@@ -119,94 +162,96 @@
           <!-- Overzicht per straat -->
           <div class="straat-overzicht">
             <h3>Overzicht per straat</h3>
-            <table class="woningen-table">
-              <thead>
-                <tr>
-                  <th>Straat</th>
-                  <th>Aantal woningen</th>
-                  <th>Gemiddelde oppervlakte</th>
-                  <th>Gemiddelde WOZ-waarde</th>
-                  <th>Hoekwoningen</th>
-                  <th>Tussenwoningen</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Amer</td>
-                  <td>28</td>
-                  <td>83 m²</td>
-                  <td>€232.500</td>
-                  <td>6</td>
-                  <td>22</td>
-                </tr>
-                <tr>
-                  <td>Donaustraat</td>
-                  <td>32</td>
-                  <td>85 m²</td>
-                  <td>€240.000</td>
-                  <td>8</td>
-                  <td>24</td>
-                </tr>
-                <tr>
-                  <td>Maasstraat</td>
-                  <td>24</td>
-                  <td>82 m²</td>
-                  <td>€228.000</td>
-                  <td>6</td>
-                  <td>18</td>
-                </tr>
-                <tr>
-                  <td>Moezelstraat</td>
-                  <td>30</td>
-                  <td>89 m²</td>
-                  <td>€248.000</td>
-                  <td>8</td>
-                  <td>22</td>
-                </tr>
-                <tr>
-                  <td>Rijnstraat</td>
-                  <td>26</td>
-                  <td>84 m²</td>
-                  <td>€235.000</td>
-                  <td>6</td>
-                  <td>20</td>
-                </tr>
-                <tr>
-                  <td>Rivierenlaan</td>
-                  <td>34</td>
-                  <td>86 m²</td>
-                  <td>€245.000</td>
-                  <td>8</td>
-                  <td>26</td>
-                </tr>
-                <tr>
-                  <td>Scheldestraat</td>
-                  <td>22</td>
-                  <td>81 m²</td>
-                  <td>€230.000</td>
-                  <td>4</td>
-                  <td>18</td>
-                </tr>
-                <tr>
-                  <td>Waalstraat</td>
-                  <td>25</td>
-                  <td>83 m²</td>
-                  <td>€232.000</td>
-                  <td>5</td>
-                  <td>20</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td><strong>Totaal</strong></td>
-                  <td><strong>221</strong></td>
-                  <td><strong>84 m²</strong></td>
-                  <td><strong>€235.000</strong></td>
-                  <td><strong>51</strong></td>
-                  <td><strong>170</strong></td>
-                </tr>
-              </tfoot>
-            </table>
+            <div class="overflow-x-auto bg-white rounded-lg shadow">
+              <table class="woningen-table min-w-full">
+                <thead>
+                  <tr>
+                    <th>Straat</th>
+                    <th>Aantal woningen</th>
+                    <th>Gemiddelde oppervlakte</th>
+                    <th>Gemiddelde WOZ-waarde</th>
+                    <th>Hoekwoningen</th>
+                    <th>Tussenwoningen</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Amer</td>
+                    <td>28</td>
+                    <td>83 m²</td>
+                    <td>€232.500</td>
+                    <td>6</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td>Donaustraat</td>
+                    <td>32</td>
+                    <td>85 m²</td>
+                    <td>€240.000</td>
+                    <td>8</td>
+                    <td>24</td>
+                  </tr>
+                  <tr>
+                    <td>Maasstraat</td>
+                    <td>24</td>
+                    <td>82 m²</td>
+                    <td>€228.000</td>
+                    <td>6</td>
+                    <td>18</td>
+                  </tr>
+                  <tr>
+                    <td>Moezelstraat</td>
+                    <td>30</td>
+                    <td>89 m²</td>
+                    <td>€248.000</td>
+                    <td>8</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td>Rijnstraat</td>
+                    <td>26</td>
+                    <td>84 m²</td>
+                    <td>€235.000</td>
+                    <td>6</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>Rivierenlaan</td>
+                    <td>34</td>
+                    <td>86 m²</td>
+                    <td>€245.000</td>
+                    <td>8</td>
+                    <td>26</td>
+                  </tr>
+                  <tr>
+                    <td>Scheldestraat</td>
+                    <td>22</td>
+                    <td>81 m²</td>
+                    <td>€230.000</td>
+                    <td>4</td>
+                    <td>18</td>
+                  </tr>
+                  <tr>
+                    <td>Waalstraat</td>
+                    <td>25</td>
+                    <td>83 m²</td>
+                    <td>€232.000</td>
+                    <td>5</td>
+                    <td>20</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td><strong>Totaal</strong></td>
+                    <td><strong>221</strong></td>
+                    <td><strong>84 m²</strong></td>
+                    <td><strong>€235.000</strong></td>
+                    <td><strong>51</strong></td>
+                    <td><strong>170</strong></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
             <p class="data-source">
               De WOZ-waarden zijn gebaseerd op gegevens van het Centraal Bureau
               voor de Statistiek (CBS).
@@ -217,7 +262,7 @@
     </section>
 
     <footer>
-      <div class="container">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <p>&copy; 2025 Sidhadorp Wooncoöperatie</p>
       </div>
     </footer>

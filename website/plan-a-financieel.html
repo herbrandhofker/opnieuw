@@ -11,39 +11,36 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="logo">
           <h1>Sidhadorp Wooncoöperatie</h1>
         </div>
         <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="plan-a.html">Plan A</a></li>
-            <li><a href="plan-b.html">Plan B</a></li>
-            <li>
-              <a href="plan-a-financieel.html" class="active"
-                >Financiële Analyse</a
-              >
-            </li>
-
-            <li><a href="woningen.html">Woningen</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+          <ul class="flex flex-wrap gap-2 justify-center md:justify-start">
+            <li><a href="index.html" class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200">Home</a></li>
+            <li><a href="plan-a.html" class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200">Plan A</a></li>
+            <li><a href="plan-b.html" class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200">Plan B</a></li>
+            <li><a href="plan-a-financieel.html" class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200">Financiële Analyse</a></li>
+            <li><a href="haalbaarheidsonderzoek.html" class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200">Haalbaarheidsonderzoek</a></li>
+            <li><a href="woningen.html" class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200">Woningen</a></li>
+            <li><a href="faq.html" class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200">FAQ</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <section class="page-header">
-      <div class="container">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2>Financiële Analyse Plan A</h2>
       </div>
     </section>
 
     <section class="content">
-      <div class="container">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="financieel-container">
           <div class="financieel-intro">
             <p>
@@ -531,7 +528,16 @@
                 </p>
                 
                 <!-- Nieuwe toevoeging over artikel 18a van de Woningwet -->
-                <h5>Voorwaarden artikel 18a Woningwet</h5>
+                <h5 class="text-lg font-semibold text-blue-800 mt-4 mb-2">Voorwaarden artikel 18a Woningwet</h5>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-md border-l-4 border-blue-500">
+                  <ul class="list-disc pl-5 space-y-2">
+                    <li class="text-sm"><strong>Rechtsvorm:</strong> Coöperatieve vereniging (UA)</li>
+                    <li class="text-sm"><strong>Doel:</strong> Primair gericht op huisvesting van de eigen leden</li>
+                    <li class="text-sm"><strong>Niet-commercieel:</strong> Geen winstoogmerk</li>
+                    <li class="text-sm"><strong>Democratisch:</strong> Alle leden hebben gelijk stemrecht</li>
+                    <li class="text-sm"><strong>Vrijstelling VPB:</strong> Geen vennootschapsbelasting</li>
+                  </ul>
+                </div>
               </div>
               
               <div class="risico-item">
@@ -573,7 +579,7 @@
     </section>
 
     <footer>
-      <div class="container">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <p>&copy; 2025 Sidhadorp Wooncoöperatie</p>
       </div>
     </footer>

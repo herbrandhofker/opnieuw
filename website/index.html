@@ -11,35 +11,83 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="logo">
-          <h1>Sidhadorp Wooncoöperatie</h1>
+      <div class="container mx-auto px-4">
+        <div
+          class="flex flex-col md:flex-row md:justify-between md:items-center py-4"
+        >
+          <div class="logo mb-4 md:mb-0">
+            <h1 class="text-2xl font-bold">Sidhadorp Wooncoöperatie</h1>
+          </div>
+          <nav>
+            <ul class="flex flex-wrap gap-2 justify-center md:justify-start">
+              <li>
+                <a
+                  href="index.html"
+                  class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="plan-a.html"
+                  class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                  >Plan A</a
+                >
+              </li>
+              <li>
+                <a
+                  href="plan-b.html"
+                  class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                  >Plan B</a
+                >
+              </li>
+              <li>
+                <a
+                  href="plan-a-financieel.html"
+                  class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                  >Financiële Analyse</a
+                >
+              </li>
+              <li>
+                <a
+                  href="haalbaarheidsonderzoek.html"
+                  class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                  >Haalbaarheidsonderzoek</a
+                >
+              </li>
+              <li>
+                <a
+                  href="woningen.html"
+                  class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                  >Woningen</a
+                >
+              </li>
+              <li>
+                <a
+                  href="faq.html"
+                  class="px-3 py-2 rounded hover:bg-blue-100 transition-colors duration-200"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="plan-a.html">Plan A</a></li>
-            <li><a href="plan-b.html">Plan B</a></li>
-            <li><a href="plan-a-financieel.html">Financiële Analyse</a></li>
-            <li><a href="woningen.html">Woningen</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
 
     <section class="hero">
-      <div class="container">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2>Welkom bij Sidhadorp Wooncoöperatie</h2>
         <p>Een duurzaam woonproject in harmonie met mens en natuur</p>
       </div>
     </section>
 
     <section class="info">
-      <div class="container">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="info-block">
           <h3>Over het project</h3>
           <p>
@@ -62,7 +110,7 @@
     </section>
 
     <section class="team">
-      <div class="container">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2>Onze projectteams</h2>
         <div class="team-grid">
           <div class="team-card">
@@ -84,7 +132,7 @@
     </section>
 
     <footer>
-      <div class="container">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <p>&copy; 2025 Sidhadorp Wooncoöperatie</p>
       </div>
     </footer>
