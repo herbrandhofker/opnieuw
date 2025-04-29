@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Woningen - Sidhadorp Wooncoöperatie</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Sidhadorp Wooncoöperatie</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="plan-a.html">Plan A</a></li>
+            <li><a href="plan-b.html">Plan B</a></li>
+            <li><a href="plan-a-financieel.html">Financieel</a></li>
+            <li>
+              <a href="haalbaarheidsonderzoek.html">Haalbaarheidsonderzoek</a>
+            </li>
+            <li><a href="woningen.html" class="active">Woningen</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h2>Woningen in Sidhadorp</h2>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <div class="woningen-container">
+          <div class="kaart-link">
+            <a href="sidhadorp_kaart.html" class="btn btn-large">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+                style="margin-right: 8px"
+              >
+                <path
+                  d="M8 0a3 3 0 0 0-3 3 3 3 0 0 0 0 6 3 3 0 0 0 0-6 3 3 0 0 0 0-6 3 3 0 0 0-3-3zm0 5a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                />
+                <path
+                  d="M8 6.8a.8.8 0 0 1 .8.8c0 .44-.36.8-.8.8a.8.8 0 0 1-.8-.8c0-.44.36-.8.8-.8zM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                />
+              </svg>
+              Bekijk Sidhadorp op de kaart
+            </a>
+          </div>
+
+          <div class="filter-section">
+            <h3>Filter woningen</h3>
+            <div class="filters">
+              <div class="filter-group">
+                <label for="straat">Straat:</label>
+                <select id="straat">
+                  <option value="alle">Alle straten</option>
+                  <option value="Amer">Amer</option>
+                  <option value="Donaustraat">Donaustraat</option>
+                  <option value="Maasstraat">Maasstraat</option>
+                  <option value="Moezelstraat">Moezelstraat</option>
+                  <option value="Rijnstraat">Rijnstraat</option>
+                  <option value="Rivierenlaan">Rivierenlaan</option>
+                  <option value="Scheldestraat">Scheldestraat</option>
+                  <option value="Waalstraat">Waalstraat</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="woningtype">Type woning:</label>
+                <select id="woningtype">
+                  <option value="alle">Alle types</option>
+                  <option value="Hoekwoning">Hoekwoning</option>
+                  <option value="Tussenwoning">Tussenwoning</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="oppervlakte">Minimale oppervlakte:</label>
+                <select id="oppervlakte">
+                  <option value="0">Geen minimum</option>
+                  <option value="80">80 m²</option>
+                  <option value="85">85 m²</option>
+                  <option value="90">90 m²</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="woningen-stats">
+            <div class="stat-box">
+              <h4>221</h4>
+              <p>Totaal aantal woningen</p>
+            </div>
+            <div class="stat-box">
+              <h4>8</h4>
+              <p>Straten in Sidhadorp</p>
+            </div>
+            <div class="stat-box">
+              <h4>€235.000</h4>
+              <p>Gemiddelde WOZ-waarde</p>
+            </div>
+          </div>
+
+          <!-- Overzicht per straat -->
+          <div class="straat-overzicht">
+            <h3>Overzicht per straat</h3>
+            <table class="woningen-table">
+              <thead>
+                <tr>
+                  <th>Straat</th>
+                  <th>Aantal woningen</th>
+                  <th>Gemiddelde oppervlakte</th>
+                  <th>Gemiddelde WOZ-waarde</th>
+                  <th>Hoekwoningen</th>
+                  <th>Tussenwoningen</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Amer</td>
+                  <td>28</td>
+                  <td>83 m²</td>
+                  <td>€232.500</td>
+                  <td>6</td>
+                  <td>22</td>
+                </tr>
+                <tr>
+                  <td>Donaustraat</td>
+                  <td>32</td>
+                  <td>85 m²</td>
+                  <td>€240.000</td>
+                  <td>8</td>
+                  <td>24</td>
+                </tr>
+                <tr>
+                  <td>Maasstraat</td>
+                  <td>24</td>
+                  <td>82 m²</td>
+                  <td>€228.000</td>
+                  <td>6</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>Moezelstraat</td>
+                  <td>30</td>
+                  <td>89 m²</td>
+                  <td>€248.000</td>
+                  <td>8</td>
+                  <td>22</td>
+                </tr>
+                <tr>
+                  <td>Rijnstraat</td>
+                  <td>26</td>
+                  <td>84 m²</td>
+                  <td>€235.000</td>
+                  <td>6</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>Rivierenlaan</td>
+                  <td>34</td>
+                  <td>86 m²</td>
+                  <td>€245.000</td>
+                  <td>8</td>
+                  <td>26</td>
+                </tr>
+                <tr>
+                  <td>Scheldestraat</td>
+                  <td>22</td>
+                  <td>81 m²</td>
+                  <td>€230.000</td>
+                  <td>4</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>Waalstraat</td>
+                  <td>25</td>
+                  <td>83 m²</td>
+                  <td>€232.000</td>
+                  <td>5</td>
+                  <td>20</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td><strong>Totaal</strong></td>
+                  <td><strong>221</strong></td>
+                  <td><strong>84 m²</strong></td>
+                  <td><strong>€235.000</strong></td>
+                  <td><strong>51</strong></td>
+                  <td><strong>170</strong></td>
+                </tr>
+              </tfoot>
+            </table>
+            <p class="data-source">
+              De WOZ-waarden zijn gebaseerd op gegevens van het Centraal Bureau
+              voor de Statistiek (CBS).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Sidhadorp Wooncoöperatie</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Sidhadorp Woningproject</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/forms.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      .admin-container {
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .admin-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+
+      th,
+      td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 3px 8px;
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
+      }
+
+      .badge-success {
+        background-color: #48bb78;
+      }
+
+      .badge-secondary {
+        background-color: #718096;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo-container">
+          <div class="site-title">
+            <h1>Sidhadorp Woningproject</h1>
+            <p class="subtitle">Admin Dashboard</p>
+          </div>
+        </div>
+
+        <nav class="main-nav">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="/" class="nav-link"
+                ><i class="fas fa-home"></i> Terug naar website</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="admin-container">
+        <div class="admin-header">
+          <h2>Aanmeldingen Plan A</h2>
+          <div>
+            <a href="/admin" class="button secondary-button"
+              ><i class="fas fa-sync"></i> Vernieuwen</a
+            >
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Voornaam</th>
+              <th>Achternaam</th>
+              <th>Adres</th>
+              <th>Email</th>
+              <th>Telefoon</th>
+              <th>Steunt Plan A</th>
+              <th>Wil meehelpen</th>
+              <th>Datum</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for aanmelding in aanmeldingen %}
+            <tr>
+              <td>{{ aanmelding.id }}</td>
+              <td>{{ aanmelding.voornaam }}</td>
+              <td>{{ aanmelding.achternaam }}</td>
+              <td>{{ aanmelding.adres }}</td>
+              <td>{{ aanmelding.email }}</td>
+              <td>{{ aanmelding.telefoon }}</td>
+              <td>
+                {% if aanmelding.supports_plan_a %}
+                <span class="badge badge-success">Ja</span>
+                {% else %}
+                <span class="badge badge-secondary">Nee</span>
+                {% endif %}
+              </td>
+              <td>
+                {% if aanmelding.wil_meehelpen %}
+                <span class="badge badge-success">Ja</span>
+                {% else %}
+                <span class="badge badge-secondary">Nee</span>
+                {% endif %}
+              </td>
+              <td>
+                {{ aanmelding.datum_aanmelding.strftime('%d-%m-%Y %H:%M') }}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Sidhadorp Woningproject</h3>
+          <p>Admin Dashboard</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sidhadorp Woningproject - Alle rechten voorbehouden</p>
+      </div>
+    </footer>
+  </body>
+</html>
