@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financiële Analyse Plan A - Sidhadorp Wooncoöperatie</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Sidhadorp Wooncoöperatie</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="plan-a.html">Plan A</a></li>
+            <li><a href="plan-b.html">Plan B</a></li>
+            <li>
+              <a href="plan-a-financieel.html" class="active"
+                >Financiële Analyse</a
+              >
+            </li>
+
+            <li><a href="woningen.html">Woningen</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h2>Financiële Analyse Plan A</h2>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <div class="financieel-container">
+          <div class="financieel-intro">
+            <p>
+              Dit is de financiële analyse voor Plan A van de Sidhadorp
+              Wooncoöperatie. Het plan is gebaseerd op een langetermijnprognose
+              van 50 jaar, waarin we aantonen dat de wooncoöperatie financieel
+              haalbaar is.
+            </p>
+          </div>
+
+          <div class="financieel-uitgangspunten">
+            <h3>Financiële Uitgangspunten</h3>
+            <div class="uitgangspunten-grid">
+              <div class="uitgangspunt-item">
+                <div class="uitgangspunt-label">Totaal leenbedrag</div>
+                <div class="uitgangspunt-value">€ 24,0 miljoen</div>
+                <div class="uitgangspunt-toelichting">
+                  WOZ 2025 = €49,1 miljoen; 1/2x = €24,6 miljoen +2%
+                  overdrachtsbelasting
+                </div>
+              </div>
+              <div class="uitgangspunt-item">
+                <div class="uitgangspunt-label">Rentepercentage</div>
+                <div class="uitgangspunt-value">5,0%</div>
+                <div class="uitgangspunt-toelichting">
+                  Actueel 4,8% maar Rabobank adviseert met 5% te rekenen
+                </div>
+              </div>
+              <div class="uitgangspunt-item">
+                <div class="uitgangspunt-label">Jaarlijkse huurstijging</div>
+                <div class="uitgangspunt-value">2,5%</div>
+                <div class="uitgangspunt-toelichting">
+                  Gelijk aan de verwachte kostenstijging/inflatie
+                </div>
+              </div>
+              <div class="uitgangspunt-item">
+                <div class="uitgangspunt-label">Jaarlijkse kostenstijging</div>
+                <div class="uitgangspunt-value">2,5%</div>
+                <div class="uitgangspunt-toelichting">
+                  Gemiddeld over de afgelopen 20 jaar: 2,5-3,0%
+                </div>
+              </div>
+              <div class="uitgangspunt-item">
+                <div class="uitgangspunt-label">Stijging onderhoudskosten</div>
+                <div class="uitgangspunt-value">3,0%</div>
+                <div class="uitgangspunt-toelichting">
+                  Groeivoet van kosten onderhoud 2007-2025 was gemiddeld 2,5%
+                </div>
+              </div>
+              <div class="uitgangspunt-item">
+                <div class="uitgangspunt-label">Aflossingstermijn</div>
+                <div class="uitgangspunt-value">50 jaar</div>
+                <div class="uitgangspunt-toelichting">Annuïtaire aflossing</div>
+              </div>
+              <div class="uitgangspunt-item">
+                <div class="uitgangspunt-label">
+                  Verwachte volledige aflossing
+                </div>
+                <div class="uitgangspunt-value">Jaar 39 (2065)</div>
+                <div class="uitgangspunt-toelichting">
+                  Volledige aflossing gehele complex
+                </div>
+              </div>
+              <div class="uitgangspunt-item">
+                <div class="uitgangspunt-label">Vennootschapsbelasting</div>
+                <div class="uitgangspunt-value">Nee</div>
+                <div class="uitgangspunt-toelichting">
+                  Een artikel 18a wooncoöperatie drijft geen onderneming
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="financieel-prognose">
+            <h3>Financiële Prognose per Decennium</h3>
+
+            <div class="tabs">
+              <button
+                class="tab-button active"
+                onclick="openTab(event, 'tab-2026-2035')"
+              >
+                2026-2035
+              </button>
+              <button
+                class="tab-button"
+                onclick="openTab(event, 'tab-2036-2045')"
+              >
+                2036-2045
+              </button>
+              <button
+                class="tab-button"
+                onclick="openTab(event, 'tab-2046-2055')"
+              >
+                2046-2055
+              </button>
+              <button
+                class="tab-button"
+                onclick="openTab(event, 'tab-2056-2065')"
+              >
+                2056-2065
+              </button>
+              <button
+                class="tab-button"
+                onclick="openTab(event, 'tab-2066-2075')"
+              >
+                2066-2075
+              </button>
+            </div>
+
+            <div id="tab-2026-2035" class="tab-content active">
+              <h4>Periode 2026-2035: Aanloopfase</h4>
+              <div class="prognose-chart">
+                <!-- Hier zou een grafiek kunnen staan -->
+              </div>
+              <div class="prognose-highlights">
+                <div class="highlight-item">
+                  <h5>Inkomsten</h5>
+                  <p>
+                    De huurinkomsten stijgen van €1,70 miljoen in 2026 naar
+                    €2,12 miljoen in 2035.
+                  </p>
+                </div>
+                <div class="highlight-item">
+                  <h5>Onderhoud</h5>
+                  <p>
+                    In 2031 is er een grote onderhoudsuitgave gepland van
+                    €416.000, waardoor het resultaat dat jaar negatief zal zijn.
+                  </p>
+                </div>
+                <div class="highlight-item">
+                  <h5>Rente</h5>
+                  <p>
+                    De rentelasten blijven constant op €1,20 miljoen per jaar,
+                    omdat er nog niet wordt afgelost.
+                  </p>
+                </div>
+                <div class="highlight-item">
+                  <h5>Resultaat</h5>
+                  <p>
+                    De eerste vijf jaar positief, daarna enkele jaren negatief
+                    door groot onderhoud.
+                  </p>
+                </div>
+              </div>
+              <table class="financieel-table">
+                <thead>
+                  <tr>
+                    <th>Jaar</th>
+                    <th>Huur</th>
+                    <th>Onderhoud</th>
+                    <th>Totaal vaste kosten</th>
+                    <th>Rente</th>
+                    <th>Resultaat</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2026</td>
+                    <td>€1.699.000</td>
+                    <td>€73.000</td>
+                    <td>€444.000</td>
+                    <td>€1.202.000</td>
+                    <td>€53.000</td>
+                  </tr>
+                  <tr>
+                    <td>2027</td>
+                    <td>€1.741.000</td>
+                    <td>€75.000</td>
+                    <td>€456.000</td>
+                    <td>€1.202.000</td>
+                    <td>€84.000</td>
+                  </tr>
+                  <tr>
+                    <td>2028</td>
+                    <td>€1.785.000</td>
+                    <td>€78.000</td>
+                    <td>€467.000</td>
+                    <td>€1.202.000</td>
+                    <td>€116.000</td>
+                  </tr>
+                  <tr>
+                    <td>2029</td>
+                    <td>€1.830.000</td>
+                    <td>€80.000</td>
+                    <td>€479.000</td>
+                    <td>€1.202.000</td>
+                    <td>€148.000</td>
+                  </tr>
+                  <tr>
+                    <td>2030</td>
+                    <td>€1.875.000</td>
+                    <td>€82.000</td>
+                    <td>€492.000</td>
+                    <td>€1.202.000</td>
+                    <td>€182.000</td>
+                  </tr>
+                  <tr>
+                    <td>2031</td>
+                    <td>€1.922.000</td>
+                    <td>€416.000</td>
+                    <td>€835.000</td>
+                    <td>€1.202.000</td>
+                    <td>-€115.000</td>
+                  </tr>
+                  <tr>
+                    <td>2032</td>
+                    <td>€1.970.000</td>
+                    <td>€428.000</td>
+                    <td>€858.000</td>
+                    <td>€1.202.000</td>
+                    <td>-€90.000</td>
+                  </tr>
+                  <tr>
+                    <td>2033</td>
+                    <td>€2.020.000</td>
+                    <td>€441.000</td>
+                    <td>€882.000</td>
+                    <td>€1.202.000</td>
+                    <td>-€64.000</td>
+                  </tr>
+                  <tr>
+                    <td>2034</td>
+                    <td>€2.070.000</td>
+                    <td>€454.000</td>
+                    <td>€906.000</td>
+                    <td>€1.202.000</td>
+                    <td>-€38.000</td>
+                  </tr>
+                  <tr>
+                    <td>2035</td>
+                    <td>€2.122.000</td>
+                    <td>€468.000</td>
+                    <td>€931.000</td>
+                    <td>€1.202.000</td>
+                    <td>-€11.000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div id="tab-2036-2045" class="tab-content">
+              <h4>Periode 2036-2045: Stabilisatie</h4>
+              <div class="prognose-chart">
+                <!-- Hier zou een grafiek kunnen staan -->
+              </div>
+              <div class="prognose-highlights">
+                <div class="highlight-item">
+                  <h5>Inkomsten</h5>
+                  <p>
+                    De huurinkomsten stijgen van €2,18 miljoen in 2036 naar
+                    €2,72 miljoen in 2045.
+                  </p>
+                </div>
+                <div class="highlight-item">
+                  <h5>Aflossing</h5>
+                  <p>
+                    In deze periode start de aflossing van de lening, met
+                    €250.000 in 2040.
+                  </p>
+                </div>
+                <div class="highlight-item">
+                  <h5>Resultaat</h5>
+                  <p>
+                    Het resultaat wordt vanaf 2036 positief en groeit naar
+                    €318.000 in 2045.
+                  </p>
+                </div>
+                <div class="highlight-item">
+                  <h5>Banksaldo</h5>
+                  <p>
+                    Het banksaldo blijft positief en groeit naar €840.000 eind
+                    2045.
+                  </p>
+                </div>
+              </div>
+              <table class="financieel-table">
+                <thead>
+                  <tr>
+                    <th>Jaar</th>
+                    <th>Huur</th>
+                    <th>Onderhoud</th>
+                    <th>Totaal vaste kosten</th>
+                    <th>Rente</th>
+                    <th>Aflossing</th>
+                    <th>Resultaat</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2040</td>
+                    <td>€2.401.000</td>
+                    <td>€542.000</td>
+                    <td>€1.066.000</td>
+                    <td>€1.202.000</td>
+                    <td>€250.000</td>
+                    <td>€132.000</td>
+                  </tr>
+                  <tr>
+                    <td>2041</td>
+                    <td>€2.461.000</td>
+                    <td>€558.000</td>
+                    <td>€1.096.000</td>
+                    <td>€1.202.000</td>
+                    <td>€250.000</td>
+                    <td>€163.000</td>
+                  </tr>
+                  <tr>
+                    <td>2042</td>
+                    <td>€2.522.000</td>
+                    <td>€575.000</td>
+                    <td>€1.126.000</td>
+                    <td>€1.202.000</td>
+                    <td>€0</td>
+                    <td>€194.000</td>
+                  </tr>
+                  <tr>
+                    <td>2043</td>
+                    <td>€2.585.000</td>
+                    <td>€592.000</td>
+                    <td>€1.157.000</td>
+                    <td>€1.202.000</td>
+                    <td>€250.000</td>
+                    <td>€226.000</td>
+                  </tr>
+                  <tr>
+                    <td>2044</td>
+                    <td>€2.650.000</td>
+                    <td>€610.000</td>
+                    <td>€1.189.000</td>
+                    <td>€1.189.000</td>
+                    <td>€250.000</td>
+                    <td>€272.000</td>
+                  </tr>
+                  <tr>
+                    <td>2045</td>
+                    <td>€2.716.000</td>
+                    <td>€629.000</td>
+                    <td>€1.222.000</td>
+                    <td>€1.177.000</td>
+                    <td>€250.000</td>
+                    <td>€318.000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div id="tab-2046-2055" class="tab-content">
+              <h4>Periode 2046-2055: Groei</h4>
+              <div class="prognose-highlights">
+                <div class="highlight-item">
+                  <h5>Inkomsten</h5>
+                  <p>
+                    De huurinkomsten stijgen van €2,78 miljoen in 2046 naar
+                    €3,48 miljoen in 2055.
+                  </p>
+                </div>
+                <div class="highlight-item">
+                  <h5>Aflossing</h5>
+                  <p>
+                    Versnelde aflossing van de lening, oplopend tot €1 miljoen
+                    per jaar in 2054-2055.
+                  </p>
+                </div>
+                <div class="highlight-item">
+                  <h5>Resultaat</h5>
+                  <p>
+                    Sterk groeiend resultaat van €364.000 in 2046 naar
+                    €1.033.000 in 2055.
+                  </p>
+                </div>
+                <div class="highlight-item">
+                  <h5>Schuldrest</h5>
+                  <p>
+                    De lening daalt van €22,5 miljoen in 2046 naar €16 miljoen
+                    eind 2055.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="tab-2056-2065" class="tab-content">
+              <h4>Periode 2056-2065: Versnelde Aflossing</h4>
+              <div class="prognose-highlights">
+                <div class="highlight-item">
+                  <h5>Inkomsten</h5>
+                  <p>De huurinkomsten stijgen naar €4,45 miljoen in 2065.</p>
+                </div>
+                <div class="highlight-item">
+                  <h5>Aflossing</h5>
+                  <p>
+                    In 2064 wordt €2,5 miljoen afgelost en in 2065 het
+                    resterende deel van de lening.
+                  </p>
+                </div>
+                <div class="highlight-item">
+                  <h5>Resultaat</h5>
+                  <p>
+                    Zeer sterk resultaat oplopend tot €2,35 miljoen in 2065.
+                  </p>
+                </div>
+                <div class="highlight-item">
+                  <h5>Schuldenvrij</h5>
+                  <p>Eind 2065 is de wooncoöperatie volledig schuldenvrij.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="tab-2066-2075" class="tab-content">
+              <h4>Periode 2066-2075: Schuldenvrij</h4>
+              <div class="prognose-highlights">
+                <div class="highlight-item">
+                  <h5>Inkomsten</h5>
+                  <p>De huurinkomsten stijgen naar €5,70 miljoen in 2075.</p>
+                </div>
+                <div class="highlight-item">
+                  <h5>Geen rentelasten</h5>
+                  <p>De lening is volledig afgelost; geen rentelasten meer.</p>
+                </div>
+                <div class="highlight-item">
+                  <h5>Kapitaalopbouw</h5>
+                  <p>Het banksaldo groeit sterk tot €29,5 miljoen eind 2075.</p>
+                </div>
+                <div class="highlight-item">
+                  <h5>Toekomstperspectief</h5>
+                  <p>
+                    Zeer positieve financiële situatie met veel ruimte voor
+                    investeringen.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="financieel-samenvatting">
+            <h3>Samenvatting en Conclusie</h3>
+            <p>
+              De financiële analyse toont aan dat Plan A voor de Sidhadorp
+              Wooncoöperatie financieel haalbaar is. Hoewel er in de eerste 10
+              jaar enkele jaren met een negatief resultaat zijn door grote
+              onderhoudsuitgaven, wordt het resultaat daarna structureel
+              positief.
+            </p>
+            <p>
+              De volledige lening van €24 miljoen kan binnen 39 jaar worden
+              afgelost, waarbij het laatste deel in 2065 wordt terugbetaald. Na
+              volledige aflossing beschikt de coöperatie over substantiële
+              financiële middelen voor verduurzaming, renovatie of andere
+              investeringen.
+            </p>
+            <p>Belangrijke conclusies:</p>
+            <ul>
+              <li>
+                Het plan is financieel haalbaar met realistische aannames over
+                huur- en kostenstijgingen
+              </li>
+              <li>Vanaf 2036 is er een structureel positief resultaat</li>
+              <li>Volledige aflossing binnen 39 jaar</li>
+              <li>
+                Na aflossing bouwt de coöperatie significant vermogen op (€29,5
+                miljoen in 2075)
+              </li>
+              <li>
+                De wooncoöperatie is niet belastingplichtig voor de
+                vennootschapsbelasting
+              </li>
+            </ul>
+          </div>
+
+          <!-- Verbeterde sectie over juridische structuur met focus op sociale verhuur -->
+          <div class="juridische-risicos">
+            <h3>Juridische Structuur en Sociaal Karakter</h3>
+            <p>
+              Een belangrijke vraag bij collectief eigendom betreft de aansprakelijkheid van individuele leden
+              bij financiële tegenvallers. Het sociale karakter van onze coöperatie biedt hierbij belangrijke
+              waarborgen.
+            </p>
+            
+            <div class="risico-grid">
+              <div class="risico-item sociale-verhuur">
+                <h4>Sociale Verhuur & Verenigingsstructuur</h4>
+                <p>
+                  De wooncoöperatie functioneert als sociale verhuurder binnen het kader van artikel 18a van de Woningwet.
+                  Dit betekent dat we onder specifieke regelgeving vallen die gericht is op bescherming van betaalbare huisvesting.
+                  Als vereniging staan ledendemocratie en onderlinge solidariteit centraal, niet winstmaximalisatie.
+                </p>
+                
+                <!-- Nieuwe toevoeging over artikel 18a van de Woningwet -->
+                <h5>Voorwaarden artikel 18a Woningwet</h5>
+              </div>
+              
+              <div class="risico-item">
+                <h4>Beperkte Aansprakelijkheid Leden</h4>
+                <p>
+                  De coöperatie wordt opgericht als coöperatieve vereniging met uitgesloten aansprakelijkheid (UA).
+                  Dit betekent dat leden niet aansprakelijk zijn boven hun lidmaatschapsbijdrage. Als sociale verhuurder
+                  zijn we bovendien in staat aanspraak te maken op specifieke waarborgregelingen die commerciële verhuurders
+                  niet hebben.
+                </p>
+              </div>
+              
+              <div class="risico-item">
+                <h4>Solidariteit & Buffervorming</h4>
+                <p>
+                  Als sociale vereniging hanteren we het solidariteitsprincipe. We bouwen bewust collectieve reserves op 
+                  die als buffer dienen bij marktschommelingen. Daarnaast heeft het niet-commerciële karakter tot gevolg
+                  dat we in aanmerking komen voor gunstigere leenvoorwaarden bij maatschappelijke banken en mogelijk
+                  voor gemeentelijke borgstelling.
+                </p>
+              </div>
+              
+              <div class="risico-item">
+                <h4>Crisissituaties & Vangnet</h4>
+                <p>
+                  Bij extreme marktomstandigheden hebben sociale wooninitiatieven meer beschermingsmogelijkheden:
+                  <ul>
+                    <li>Mogelijkheid tot herfinanciering via sociale banken tegen gunstigere voorwaarden</li>
+                    <li>Toegang tot gemeentelijke of provinciale noodsteun voor sociale huisvesting</li>
+                    <li>Samenwerkingsmogelijkheden met woningcorporaties als vangnet</li>
+                    <li>Collectieve beslissingsbevoegdheid over eventuele noodmaatregelen via ALV</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Sidhadorp Wooncoöperatie</p>
+      </div>
+    </footer>
+
+    <script>
+      function openTab(evt, tabName) {
+        var i, tabcontent, tabbuttons;
+
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].classList.remove("active");
+        }
+
+        tabbuttons = document.getElementsByClassName("tab-button");
+        for (i = 0; i < tabbuttons.length; i++) {
+          tabbuttons[i].classList.remove("active");
+        }
+
+        document.getElementById(tabName).classList.add("active");
+        evt.currentTarget.classList.add("active");
+      }
+    </script>
+  </body>
+</html>
